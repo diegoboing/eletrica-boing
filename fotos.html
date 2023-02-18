@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos Elétrica Boing</title>
-    <link rel="stylesheet" href="../eletrica-boing/stilos/fotos.css">
+    <!--<link rel="stylesheet" href="../eletrica-boing/stilos/fotos.css">-->
+
+    <style>
+         #container {
+            background-image: url('fotos/fundo.jpeg');
+            background-size: 100% 100%;
+
+            position: relative;
+            /*height: 500px;*/
+            height: 85vh;
+            background-color: purple;
+            padding: 10px;
+        }
+        #conteudo {
+            /*background-image: url('fotos/fundo.jpeg');
+            background-color: yellow;
+            */
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            left: 50%; /*Propriedade pra usar por causa do position: relative e position: absolute.*/
+            top: 50%;
+            /*margin: auto;Centralizar o conteúdo horizontal - apenas*/
+            transform: translate(-50%, -50%); /*Transform é alguma transformação ou alteração de caixas*/
+
+        }
+    </style>
+
 </head>
 <body>
-    
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
 </body>
 </html>
